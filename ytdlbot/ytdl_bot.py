@@ -133,6 +133,18 @@ def about_handler(client: Client, message: types.Message):
     client.send_chat_action(chat_id, enums.ChatAction.TYPING)
     client.send_message(chat_id, BotText.about)
 
+@app.on_message(filters.command(["inline_mode"]))
+def inline_handler(client: Client, message: types.Message):
+    chat_id = message.chat.id
+    client.send_chat_action(chat_id, enums.ChatAction.TYPING)
+    client.send_message(chat_id, BotText.inline_mode)
+
+@app.on_message(filters.command(["all_commands"]))
+def allcommands_handler(client: Client, message: types.Message):
+    chat_id = message.chat.id
+    client.send_chat_action(chat_id, enums.ChatAction.TYPING)
+    client.send_message(chat_id, BotText.all_commands)
+
 
 @app.on_message(filters.command(["sub"]))
 def subscribe_handler(client: Client, message: types.Message):

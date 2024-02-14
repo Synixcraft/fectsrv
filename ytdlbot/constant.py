@@ -28,6 +28,23 @@ class BotText:
 
     about = "A Simple Video Downloader For Downloading Vides From Various Sites .Hosted By @Abel360w."
 
+    inline_mode = "Search @FetchRobot_Inline_bot To Search For More Than 10000 Files From Our DataBase 🤖"
+
+    all_commands =all_commands = """Here Is the List Of All Commands:
+/start - Let's Start The Bot 🚀
+/about - Know More About The Bot ℹ️
+/help - Want Some Help Click Here ! ❓
+/ytdl - Download Video In Group 📹
+/settings - Set Your Preferences ⚙️
+/buy - Buy Download Token 💳
+/direct - Download a File Directly 📥
+/sub - Subscribe To A YT Channel 📺
+/unsub - Unsubscribe From A YT Channel ❌
+/sub_count - Check Subscription Status [Owner Special] 🔢
+/uncache - Delete Cache For This Link [Owner Special] 🗑️
+/purge - Remove All Tasks [Owner Special] 🧹
+/inline_mode - Search for files in our database 🔍"""
+
     buy = f"""Currently /buy Is Disabled And You Cannot Buy Paid Tokens Sorry For The Inconvinience ! """
 
     private = "This bot is for private use"
